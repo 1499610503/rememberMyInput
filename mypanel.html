@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			body {
+				background: #F5F5F5;
+				color: #555555;
+			}
+
+			input {
+				outline: none;
+				border: none;
+			}
+
+			li {
+				list-style: none;
+			}
+
+			.aside {
+				position: fixed;
+				width: 220px;
+				overflow: hidden;
+				/* height: 100%; */
+				left: 0;
+				top: 0;
+				bottom: 0;
+				text-align: center;
+				background: #fdfdfd;
+			}
+
+			.aside li {
+				/* width: 100%; */
+				line-height: 24px;
+				font-size: 12px;
+				border-bottom: 1px solid #F5F5F5;
+				background: #FFFFFF;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				/* word-wrap:break-word; */
+				padding: 0 4px;
+			}
+
+			.aside li.active {
+				/* background: #f0f0f0; */
+				color: dodgerblue;
+				/* font-weight: bold; */
+			}
+
+			.content {
+				margin-left: 230px;
+				background: #FFFFFF;
+				font-size: 16px;
+				padding: 20px 20px 30px;
+				min-height: 100vh;
+				min-width: 100px;
+				box-sizing: border-box;
+				word-wrap: break-word;
+				word-break: break-all;
+				white-space: normal;
+				overflow: hidden;
+			}
+
+			.url {
+				font-weight: bold;
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+
+			.fieldTitle {
+				font-weight: bold;
+				margin: 8px 0;
+				margin-left: -20px;
+				position: relative;
+			}
+			.fieldTitle::before{
+				content: '';
+				width: 3px;
+				height: .8em;
+				position: absolute;
+				left: -8px;
+				top: 50%;
+				transform: translateY(-50%);
+				background: #555555;
+			}
+
+			.fieldBox {
+				padding-left: 20px;
+				margin-bottom: 10px;
+			}
+			.fieldBox .attrItem{
+				display: flex;
+				align-items: center;
+				margin: 4px 0;
+			}
+			.fieldBox .attrItem label{
+				width: 126px;
+			}
+			.fieldBox .attrItem input{
+				flex: 1;
+				min-width: 100px;
+				font-size: 15px;
+				border-bottom: 1px solid #f0f0f0;
+			}
+			.fieldBox .attrItem input.nodeValue{
+				border-bottom: 1px solid #CCCCCC;
+			}
+			.delbtn{
+				display: inline-block;
+				padding: 6px;
+				background: #FF5555;
+				color: #FFFFFF;
+				margin-bottom: 20px;
+				user-select: none;
+			}
+			.delbtn:hover{
+				background: orangered;
+			}
+		</style>
+	</head>
+	<body>
+		<aside class="aside">
+			<ul>
+				<!-- <li class="avtive">http://localyh.tribe.manage/index.php/_business/login</li>
+				<li>http://localyh.tribe.manage/index.php/_business/tribe/edit/977</li>
+				<li>http://localyh.tribe.manage/index.php/_business/tribe_staff/edit/160825</li> -->
+			</ul>
+		</aside>
+		<div class="content">
+			<!-- <div class="url">
+				<span>url:</span>
+				<span class="urlText"></span>
+			</div> -->
+			<div class="delbtn">删除该网页保存的数据</div>
+			<!-- <div class="fieldBox">
+				<div class="fieldTitle">field1</div>
+				<div class="attrBox">
+					<div class="attrItem">
+						<label>${key}:</label>
+						<input readonly type="text" value="${item[key]}" />
+					</div>
+				</div>
+			</div> -->
+		</div>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/globalData.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mypanel.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

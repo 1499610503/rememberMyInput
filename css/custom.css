@@ -1,0 +1,26 @@
+/* body{
+	background: red;
+} */
+.rememberBtn{
+	position: fixed;
+	right: 0;
+	bottom: 90px;
+	display: inline-block;
+	padding: 8px;
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	box-shadow: 0px 0px 6px #CCCCCC;
+}
+.fillRememberBtn{
+	position: fixed;
+	right: 0;
+	bottom: 30px;
+	display: inline-block;
+	padding: 8px;
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	box-shadow: 0px 0px 6px #CCCCCC;
+}
+.rememberBtn:hover,.fillRememberBtn:hover{
+	background: #F5F5F5;
+}
